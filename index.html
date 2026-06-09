@@ -4,15 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            margin:0;
+        }
+        section {
+            width:100%;
+            height:100vh;
+
+        }
+        /* section:nth-child(odd) {
+            background-color: skyblue;
+        } */
+        .wrapper {
+            max-width: 1200px;
+            margin: auto;
+        }
+        h1 {
+            color: skyblue;
+            font-size: 48px;
+        }
+        h2 {
+            font-size: 32px;
+        }
+        h3 {
+            font-size: 24px;
+            font-weight: 300;
+        }
+        .btns {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+        .btns .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: skyblue;
+            text-align: center;
+        }
+        .btns__menu {
+            display: flex;
+            justify-content: center;
+        }
+        .btns__menu .btn {
+            font-size: 16px;
+            font-weight: 600;
+            width: 150px;
+            height: 40px;
+            cursor: pointer;
+        }
+        .btns__menu .btn:hover {
+            background-color: white;
+        }
+        button {
+            background-color: transparent;
+            border: none;
+        }
+    </style>
 </head>
 <body>
     <div class="btns">
         <div class="container">
-            <button class="btn home">Home</button>
-            <button class="btn about">About</button>
-            <button class="btn skills">Skills</button>
-            <button class="btn works">Works</button>
-            <button class="btn contact">Contact</button>
+            <div class="btns__menu">
+                <button class="btn home">Home</button>
+                <button class="btn about">About</button>
+                <button class="btn skills">Skills</button>
+                <button class="btn works">Works</button>
+                <button class="btn contact">Contact</button>
+            </div>
         </div>
     </div>
     <section id="home">
